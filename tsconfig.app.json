@@ -15,7 +15,9 @@
       "@pages/*": ["./pages/*"],
       "@assets/*": ["./assets/*"],
       "@contexts/*": ["./contexts/*"],
-      "@hooks/*": ["./hooks/*"]
+      "@hooks/*": ["./hooks/*"],
+      "@utils/*": ["./utils/*"],
+      "@services/*": ["./services/*"]
     },
 
     /* Bundler mode */
