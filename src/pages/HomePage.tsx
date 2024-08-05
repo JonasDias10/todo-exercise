@@ -13,7 +13,7 @@ export function Home() {
   const [search, setSearch] = useState("");
 
   return (
-    <Container>
+    <Container component="main">
       <CustomAppBar search={search} setSearch={setSearch} />
       <TodoList search={search} />
       <Snackbar
