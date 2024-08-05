@@ -2,6 +2,11 @@
 
 Um aplicativo simples de gerenciamento de tarefas (TODO) que permite adicionar, editar, excluir e visualizar tarefas.
 
+## Deploy
+
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/e2bf3ccf-07c4-4369-931b-0b9ada4852f5/deploy-status)](https://app.netlify.com/sites/todo-exercise/deploys)
+- **Link:** **https://todo-exercise.netlify.app/signin**
+
 ## Funcionalidades
 
 - **Adicionar Tarefas**: Crie novas tarefas para acompanhar o que precisa ser feito.
