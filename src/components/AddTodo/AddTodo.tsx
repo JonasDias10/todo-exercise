@@ -2,16 +2,11 @@ import { useSnackbar } from "@hooks/useSnackbar";
 import { useTodoForm } from "@hooks/useTodoForm";
 import { useTodos } from "@hooks/useTodos";
 import { Box, Button, Modal, TextField, Typography } from "@mui/material";
+import { generateId } from "@utils/generateId";
 
 type Props = {
   open: boolean;
   handleClose: () => void;
-};
-
-const generateId = (): number => {
-  const currYear = new Date().getFullYear();
-  const timestamp = Date.now();
-  return parseInt(`${currYear}${timestamp}`);
 };
 
 export function AddTodo({ open, handleClose }: Props) {

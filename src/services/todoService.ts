@@ -1,5 +1,6 @@
 import { Todo } from "types/todo";
 import { getLocalStorage, setLocalStorage } from "@utils/localStorage";
+import { generateId } from "@utils/generateId";
 
 export const addTodo = (todo: Todo): Todo[] => {
   const todos = getTodos();
@@ -28,8 +29,17 @@ export const deleteTodo = (id: number): Todo[] => {
 export const updateTodo = (todo: Todo): Todo[] => {
   const todos = getTodos();
 
-  const newTodos = todos.map((t) => (t.id === todo.id ? todo : t));
-  setLocalStorage("todos", JSON.stringify(newTodos));
+  const index = todos.findIndex((todoSaved) => todoSaved.id === todo.id);
 
-  return newTodos;
+  if (index === -1) {
+    todo.id = generateId();
+    todos.push(todo);
+    setLocalStorage("todos", JSON.stringify(todos));
+    return todos;
+  }
+
+  todos[index] = todo;
+  setLocalStorage("todos", JSON.stringify(todos));
+
+  return todos;
 };
