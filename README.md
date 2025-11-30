@@ -48,6 +48,3 @@ Um aplicativo simples de gerenciamento de tarefas (TODO) que permite adicionar, 
 
    Abra o navegador e acesse `http://localhost:3000`.
 
----
-
-#### **Autor: Jonas Dias | [Social Media](https://jonas-dias.netlify.app/) | Obrigado**
